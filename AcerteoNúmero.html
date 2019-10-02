@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>número imaginado</title>
+    <meta charset="utf8" />
+    <script>
+
+        function acerto() {
+
+            var numeroPensado = Math.round(Math.random() * 100); 
+            var tentativa = 1;
+            while (tentativa <= 3) {
+                var tentando = prompt("digite o número ");
+                if(tentando == numeroPensado){
+                    alert("número correto");
+                    tentativa = 3;
+                }else{
+                    alert("não é esse número");
+                }
+
+                tentativa++;
+            }
+
+            console.log("Numero pensado: " + numeroPensado);
+            alert("Numero pensado: " + numeroPensado);
+
+        }
+
+    </script>
+
+</head>
+
+<body onload="acertoo()">
+
+</body>
+
+</html>
